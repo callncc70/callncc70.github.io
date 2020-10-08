@@ -1,7 +1,7 @@
 function addNumbers() {
 	//INPUT
-	 let x = parseFloat(document.getElementById("number1").value);
-	 let y = parseFloat(document.getElementById("number2").value);
+	 let x = parseFloat(document.getElementById('number1').value);
+	 let y = parseFloat(document.getElementById('number2').value);
 	//PROCESSING
 	 let sum = x + y;
 	//OUTPUT
