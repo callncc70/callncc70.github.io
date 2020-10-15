@@ -4,7 +4,7 @@
 <head>
     <title>Nelson Call Cit 160</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="css/template.css">
 </head>
 
 <body>
@@ -25,7 +25,18 @@
     <footer>
         &copy;2020 &bull; Nelson Call &bull; BYU-Idaho &bull; CIT 160
     </footer>
-    <script src="addnumber.js"></script>
+    <script>
+        function addNumbers() {
+            //INPUT
+            let x = parseFloat(document.getElementById('number1').value);
+            let y = parseFloat(document.getElementById('number2').value);
+            //PROCESSING
+            let sum = x + y;
+            //OUTPUT
+            document.getElementById("output").innerHTML = "The sum of " + x + " and " + y + " equals " + sum + "!";
+        }
+
+    </script>
 </body>
 
 </html>
