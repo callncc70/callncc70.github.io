@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Title</title>
+</head>
+<body>
+  <p>Please enter two numbers:</p>
+  <input type="text" id="one" size="5"><br>
+  <input type="text" id="two" size="5">
+  <button type="button" onclick="b()">Click</button>
+
+
+  <p id="output"></p>
+
+  <script>
+    function b() { 
+    //Input:
+    let x = parseFloat(document.getElementById('one').value);
+    let y = parseFloat(document.getElementById('two').value);
+    let sum= x+y;
+     //Processing:
+    
+     if ((x>5 && y>5) || sum > 20 ){
+        output= "True";
+     }
+     else {
+         output= "False";
+    }
+    //Output:
+     document.getElementById("output").innerText = output ; 
+    }
+
+  </script>
+</body>
+</html>

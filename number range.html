@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nelson Call Cit 160</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/template.css">
+</head>
+
+<body>
+    <header>
+        <h1>Number Range</h1>
+        <h2>Nelson Call </h2>
+    </header>
+    <main>
+        <h3>Range of Numbers Divisable by Divsor</h3>
+        <label>Enter a starting number : <input type="text" id="number1"></label>
+        <label>Enter a ending number: <input type="text" id="number2"></label>
+        <label>Enter a divsor: <input type="text" id="number3"></label>
+        <label><button onclick="addNumbers()">Number Range</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Nelson Call &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <Script>
+        function addNumbers() {
+	    //INPUT the three numbers input by the user 
+	    let x = parseFloat(document.getElementById('number1').value);
+        let y = parseFloat(document.getElementById('number2').value);
+        let z = parseFloat(document.getElementById('number3').value);
+        //PROCESSING identifing the number that are divisable by the final number. 
+        let numbers="";
+        let output=""; 
+        let i ;
+        for (i=x; i<y;i++ ){
+            numbers+= i;
+        }
+        while( numbers % z == 0 ){
+            output+= numbers+" "
+        }
+            
+         
+            
+                
+        
+            
+
+        
+      
+           
+         
+
+        
+        
+        
+	    //OUTPUT show the list of number that are divisable by the third number 
+	    document.getElementById("output").innerHTML =  output ;
+        }   
+    </Script>
+
+</body>
+
+</html> 

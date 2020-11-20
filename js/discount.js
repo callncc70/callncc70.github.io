@@ -19,7 +19,7 @@ function dis() {
         price = x+tax;
     }
     // Output telling the customer the price    
-    document.getElementById("output").textContent = "Your total is $" + price.toFixed(2);
+    document.getElementById("output").innerHTML = "Your total is $" + price.toFixed(2);
 
 
 }

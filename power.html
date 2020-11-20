@@ -13,10 +13,9 @@
         <h2>Nelson Call </h2>
     </header>
     <main>
-        <h3>Add Two Numbers</h3>
-        <label>Enter Number One: <input type="text" id="number1"></label>
-        <label>Enter Number Two: <input type="text" id="number2"></label>
-        <label><button onclick="addNumbers()">Add Numbers</button></label>
+        <h3>2^0 to 2^31 </h3>
+       
+        
         <hr>
         <p><span id="output"></span></p>
     </main>
@@ -24,7 +23,13 @@
         &copy;2020 &bull; Nelson Call &bull; BYU-Idaho &bull; CIT 160
     </footer>
     <Script>
-       
+        let i;
+        let table="1";
+        for (i=1; i <= 31; i++ ){
+            table += ", " + 2**i  ; 
+        }
+
+        document.getElementById("output").innerHTML =table ; 
     </Script>
 
 </body>
