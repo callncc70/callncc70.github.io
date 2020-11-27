@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nelson Call Cit 160</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/template.css">
+</head>
+
+<body>
+    <header>
+        <h1>Week 11: Loan Calculator</h1>
+        <h2>Nelson Call </h2>
+    </header>
+    <main>
+        <h3>Loan Calculator</h3>
+        <label>Amount borrowed (principal): <input type="text" id="borrow"></label>
+        <label>Annual interest rate(example: .065): <input type="text" id="rate"></label>
+        <label>Number of years:<input type="text" id="year"></label>
+        <label>Payments per year:<input type="text" id="time"></label>
+        <label><button onclick="doPayment()">Compute Payment</button><span id="output1"></span></label>
+        <label>Number of payments paid to date:   <input type="text" id="pay"></label>
+        <label><button onclick="doBalance()">Compute Payoff Amount</button></label>
+        <hr>
+        <p><span id="output2"></span></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Nelson Call &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <Script src= 'js/loan.js'>
+       
+    </Script>
+
+</body>
+
+</html>
