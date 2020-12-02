@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nelson Call Cit 160</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/template.css">
+</head>
+
+<body>
+    <header>
+        <h1>Week 12: Arrays</h1>
+        <h2>Nelson Call </h2>
+    </header>
+    <main>
+
+        <label><button onclick="test()">Test</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Nelson Call &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <Script>
+        /* Defining Table
+        * Input: no user input
+        * Processing: Test the addEnds and getMiddle functions by calling them.
+        * Output: The values returned from the addEnds and getMiddle functions.
+        */
+        function test() {
+            let list1 = [17, 8, 9, 5, 20];
+            let list2 = [12, 4, 8, 15, 17, 5, 20, 11];
+
+            // Test the addEnds function by calling it two times.
+            let sum1 = addEnds(list1);
+            let sum2 = addEnds(list2);
+
+            // Test the getMiddle function by calling it two times.
+            let mid1 = getMiddle(list1);
+            let mid2 = getMiddle(list2);
+
+            // Build a string to display to the user.
+            let output =
+                sum1 + '<br>' +
+                sum2 + '<br>' +
+                mid1 + '<br>' +
+                mid2;
+
+            // Display the output string for the user to see.
+            document.getElementById('output').innerHTML = output;
+        }
+        function addEnds(list) {
+            let end= list[0] + list[list.length-1];
+            return end 
+        }
+        function getMiddle(list) {
+            let mid = list.length%2;
+            let middle;
+            
+            if (mid == 0 ){
+               
+                middle = (list[(list.length/2)]+list[(list.length/2)-1])/2;
+            }
+            else {
+                middle = list[(list.length/2)-.5]
+            }
+            return middle
+        }
+
+    </Script>
+
+</body>
+
+</html>
