@@ -21,7 +21,7 @@
     <footer>
         &copy;2020 &bull; Nelson Call &bull; BYU-Idaho &bull; CIT 160
     </footer>
-    <Script>
+    <script>
         /* Defining Table
         * Input: no user input
         * Processing: Test the countEvens and multiply functions by calling them.
@@ -47,7 +47,7 @@
                 mult2;
 
             // Display the output string for the user to see.
-            document.getElementById('output').innerHTML = output;
+            document.getElementById('output').innerHTML = output ;
         }
         function countEvens(list) {
             let count = 0;
@@ -61,21 +61,19 @@
             }
             return count
         }
-
         function multiply(list, multiplier) {
-            let newList = [];
+            let newList= [];
             for (let i = 0; i <= list.length - 1; i++) {
-                multi = list[i] * multiplier
-                newList += multi + ","
+                multi = list[i] * multiplier;
+                newList.push(multi);
+             
+            
             }
             
-
-            return  "[" +newList+ "]"
-
-
+            return newList
         }
 
-    </Script>
+    </script>
 
 </body>
 
